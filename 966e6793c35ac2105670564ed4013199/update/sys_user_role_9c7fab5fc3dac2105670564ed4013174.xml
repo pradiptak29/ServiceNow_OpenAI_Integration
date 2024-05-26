@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_933237_ask_me_an.ask_genai_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>ask_genai_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 20:35:21</sys_created_on>
+        <sys_id>9c7fab5fc3dac2105670564ed4013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_933237_ask_me_an.ask_genai_user</sys_name>
+        <sys_package display_value="Ask Me Anything" source="x_933237_ask_me_an">966e6793c35ac2105670564ed4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ask Me Anything">966e6793c35ac2105670564ed4013199</sys_scope>
+        <sys_update_name>sys_user_role_9c7fab5fc3dac2105670564ed4013174</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 20:35:21</sys_updated_on>
+    </sys_user_role>
+</record_update>
