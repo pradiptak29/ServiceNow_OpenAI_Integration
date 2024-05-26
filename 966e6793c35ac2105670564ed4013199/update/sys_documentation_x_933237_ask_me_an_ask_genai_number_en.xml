@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="number" label="Number" language="en" table="x_933237_ask_me_an_ask_genai">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <help/>
+            <hint/>
+            <label>Number</label>
+            <language>en</language>
+            <name>x_933237_ask_me_an_ask_genai</name>
+            <plural>Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-26 20:41:59</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Number</sys_name>
+            <sys_package display_value="Ask Me Anything" source="x_933237_ask_me_an">966e6793c35ac2105670564ed4013199</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ask Me Anything">966e6793c35ac2105670564ed4013199</sys_scope>
+            <sys_update_name>sys_documentation_x_933237_ask_me_an_ask_genai_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-26 20:51:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
