@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="4eeea3dfc3dac2105670564ed4013129" label="Ask GenAI" max_length="40" name="x_933237_ask_me_an_ask_genai" type="collection"/>
+    <element attributes="live_feed=false" db_object_id="4eeea3dfc3dac2105670564ed4013129" label="Ask GenAI" max_length="40" name="x_933237_ask_me_an_ask_genai" type="collection">
+        <element label="Active" mandatory="true" max_length="255" name="active" type="boolean"/>
+        <element label="Ask GenAI" mandatory="true" max_length="4000" name="ask_genai" type="string_full_utf8"/>
+        <element label="GenAI Resolution" max_length="10000" name="genai_resolution" read_only="true" type="string_full_utf8"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+    </element>
 </database>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_933237_ask_me_an.AskGenAIUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This script include is created for the Application - "Ask Me Anything" to integrate ServiceNow with GenAI.</description>
+        <name>AskGenAIUtils</name>
+        <script><![CDATA[var AskGenAIUtils = Class.create();
+AskGenAIUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    helpUserAskGenAI: function() {
+        var questionForAI = this.getParameter('sysparm_questionForAI');
+
+        var content = "I want to know about the following question: ";
+        if (questionForAI) {
+            content += "Question: " + questionForAI + "? ";
+        }
+        //content += "Please help me with a detailed solution for this mentioned question.";
+        var answer = this.getResponse(content);
+        if (answer) {
+            return answer;
+        } else {
+            return "I didn't understand your question. Please rephrase it for me once again.";
+        }
+    },
+
+    getResponse: function(content) {
+
+        var answer = undefined;
+
+        try {
+
+            var restMessage = new sn_ws.RESTMessageV2('OpenAI', 'OpenAI - POST');
+            restMessage.setStringParameterNoEscape('model', "gpt-3.5-turbo");
+            restMessage.setStringParameterNoEscape('content', content);
+            restMessage.setStringParameterNoEscape('max_tokens', 400);
+            restMessage.setStringParameterNoEscape('temperature', 0);
+
+            var response = restMessage.execute();
+            var responseBody = response.getBody();
+            var statusCode = response.getStatusCode();
+
+            var responseObj = JSON.parse(responseBody);
+            if (statusCode == 200) {
+                answer = responseObj.choices[0].message.content;
+            }
+
+        } catch (ex) {
+            var message = ex.message;
+            gs.info("OpenAI REST API Error: " + message);
+        }
+
+        return answer;
+    },
+
+    type: 'AskGenAIUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 21:09:53</sys_created_on>
+        <sys_id>a155bf57c31ec2105670564ed40131a9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AskGenAIUtils</sys_name>
+        <sys_package display_value="Ask Me Anything" source="x_933237_ask_me_an">966e6793c35ac2105670564ed4013199</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ask Me Anything">966e6793c35ac2105670564ed4013199</sys_scope>
+        <sys_update_name>sys_script_include_a155bf57c31ec2105670564ed40131a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 22:02:58</sys_updated_on>
+    </sys_script_include>
+</record_update>
