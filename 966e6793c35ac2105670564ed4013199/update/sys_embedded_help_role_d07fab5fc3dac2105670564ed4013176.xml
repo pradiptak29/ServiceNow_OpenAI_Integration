@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_933237_ask_me_an.ask_genai_user" name="x_933237_ask_me_an.ask_genai_user">9c7fab5fc3dac2105670564ed4013174</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 20:35:21</sys_created_on>
+        <sys_id>d07fab5fc3dac2105670564ed4013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9c7fab5fc3dac2105670564ed4013174</sys_name>
+        <sys_package display_value="Ask Me Anything" source="x_933237_ask_me_an">966e6793c35ac2105670564ed4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ask Me Anything">966e6793c35ac2105670564ed4013199</sys_scope>
+        <sys_update_name>sys_embedded_help_role_d07fab5fc3dac2105670564ed4013176</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 20:35:21</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

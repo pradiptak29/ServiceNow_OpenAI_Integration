@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_933237_ask_me_an_ask_genai</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 20:35:22</sys_created_on>
+        <sys_id>247f2fdfc3dac2105670564ed40131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_933237_ask_me_an_ask_genai</sys_name>
+        <sys_package display_value="Ask Me Anything" source="x_933237_ask_me_an">966e6793c35ac2105670564ed4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ask Me Anything">966e6793c35ac2105670564ed4013199</sys_scope>
+        <sys_update_name>ua_table_licensing_config_247f2fdfc3dac2105670564ed40131e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-26 20:35:22</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>
